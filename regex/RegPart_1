@@ -1,0 +1,25 @@
+[Introduction]
+Matching Specific String : hackerrank
+Matching Anything But a Newline : ^...\....\....\....$
+Matching Digits & Non-Digit Characters : \d\d\D\d\d\D\d\d\d\d
+Matching Whitespace & Non-Whitespace Character : \S\S\s\S\S\s\S\S
+Matching Word & Non-Word Character : \w\w\w\W\w\w\w\w\w\w\w\w\w\w\W\w\w\w
+Matching Start & End : ^\d\w\w\w\w.$
+
+[Character Class]
+Matching Specific Characters : ^[1,2,3][1,2,0][x,s,0][3,0,A,a][x,s,u][.,]$
+Excluding Specific Characters : ^\D[^aeiou][^bcDF]\S[^AEIOU][^.,]$
+Matching Character Ranges : ^[a-z][1-9][^a-z][^A-Z][A-Z]
+
+[Repetitions]
+Matching {x} Repetitions : ^[A-Za-z2468]{40}[\s13579]{5}$
+Matching {x, y} Repetitions : ^\d{1,2}[a-zA-Z]{3,}[.]{0,3}$
+Matching Zero Or More Repetitions : ^\d{2,}[a-zA-Z]*$
+Matching One Or More Repetitions : ^\d+[A-Z]+[a-z]+$
+Matching Ending Items : [A-Za-z]s$
+Matching Ending Items : ^[a-zA-Z]*s$
+
+[Grouping and Capturing]
+Matching Word Boundaries : \b[aeiouAEIOU][a-zA-Z]*\b
+Capturing & Non-Capturing Groups : (ok){3,}
+Alternative Matching : ^(Mr|Mrs|Ms|Dr|Er)\.[a-zA-Z]+$
